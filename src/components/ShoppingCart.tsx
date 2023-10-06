@@ -7,8 +7,8 @@ export default function ShoppingCart() {
     }
 
     return(
-        <aside>
-        <button onClick={handleClick}>Legg til handlekurv</button>
-        </aside>
+        <button type="button" onClick={handleClick}>
+        Like me
+      </button>
     )
 }
