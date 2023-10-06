@@ -9,8 +9,10 @@ export default function ShoppingCart() {
     }
 
     return(
+        <aside>
         <button type="button" onClick={handleClick}>
-        Legg til i handlevogn
-      </button>
+            Legg til i handlevogn
+        </button>
+      </aside>
     )
 }
