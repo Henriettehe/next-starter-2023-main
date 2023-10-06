@@ -9,6 +9,7 @@ export default function Home() {
     <RootLayout>
       <Product />
       <ProductInfo />
+      <ShoppingCart />
     </RootLayout>
   )
 }

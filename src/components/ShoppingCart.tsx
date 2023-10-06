@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react"; 
 
 export default function ShoppingCart() {
@@ -8,7 +10,7 @@ export default function ShoppingCart() {
 
     return(
         <button type="button" onClick={handleClick}>
-        Like me
+        Legg til i handlevogn
       </button>
     )
 }
