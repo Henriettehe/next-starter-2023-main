@@ -3,7 +3,7 @@ import RootLayout from "./layout";
 import ProductInfo from "@/components/ProductInfo";
 import "./globals.css"; 
 import ShoppingCart from "@/components/ShoppingCart";
-import Shoes from "@/components/Shoes";
+import Card from "@/components/Card";
 
 export default function Home() {
   return(
@@ -11,7 +11,7 @@ export default function Home() {
       <Product />
       <ProductInfo />
       <ShoppingCart />
-      <Shoes />
+      <Card />
     </RootLayout>
   )
 }
