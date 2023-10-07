@@ -1,5 +1,6 @@
 import ProductInfo from "./ProductInfo";
 import Title from "./Title";
+import { products } from "@/api/products";
 
 /* Første forsøk...
 export default function Product({}){
