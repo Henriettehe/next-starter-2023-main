@@ -9,10 +9,10 @@ export default function ShoppingCart() {
     }
 
     return(
-        <>
+        <section className="bg-slate-700 text-white py-4 hover:py-8">
         <button type="button" onClick={handleClick}>
             Legg til i handlevogn
         </button>
-      </>
+      </section>
     )
 }
