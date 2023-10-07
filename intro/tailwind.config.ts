@@ -9,6 +9,10 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    // La inn en white, for å få tekstfargen til å vises på nettsiden. Kilde: https://stackoverflow.com/questions/67098510/class-text-white-with-tailwind-does-not-work 
+    textColor: {
+      white: "#FFF", 
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

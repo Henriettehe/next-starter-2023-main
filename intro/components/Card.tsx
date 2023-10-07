@@ -9,10 +9,7 @@ const Card = ({ id, name, price, description }) => {
         <p>{description}</p>
         <p>Pris: {price} kr</p>
         {/* Føler det er noe feil her(Lite dynamisk?), ved å importere et komponent sånn? :/  */}
-        <section className="bg-[#64748b]"> 
-            <ShoppingCart />
-        </section>
-        
+        <ShoppingCart />
       </div>
     );
   };
