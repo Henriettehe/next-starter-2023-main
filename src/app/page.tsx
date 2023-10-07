@@ -1,17 +1,15 @@
 import Product from "@/components/Title";
 import RootLayout from "./layout";
-import ProductInfo from "@/components/ProductInfo";
 import "./globals.css"; 
 import ShoppingCart from "@/components/ShoppingCart";
-import Card from "@/components/Card";
+import Cards from "../../intro/components/Cards";
 
 export default function Home() {
   return(
     <RootLayout>
       <Product />
-      <ProductInfo />
       <ShoppingCart />
-      <Card />
+      <Cards />
     </RootLayout>
   )
 }
