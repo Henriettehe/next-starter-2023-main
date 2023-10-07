@@ -1,3 +1,5 @@
+import ShoppingCart from "./ShoppingCart";
+
 const Card = ({ id, name, price, description }) => {
     return (
       <div className="card">
@@ -6,6 +8,7 @@ const Card = ({ id, name, price, description }) => {
         <p>Beskrivelse:</p>
         <p>{description}</p>
         <p>Pris: {price} kr</p>
+        <ShoppingCart />
       </div>
     );
   };
