@@ -2,6 +2,8 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
+    // Via Youtube, tips om å legge til alle mapper i prosjektet. La derfor til intro mappen. 
+    './intro/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
