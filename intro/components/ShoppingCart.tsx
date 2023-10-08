@@ -1,6 +1,7 @@
 'use client'  // Fikk noe hjelp med use client, var noe som manglet for å få alt til å fungere. 
 import React from "react"; 
 
+
 export default function ShoppingCart() {
 
     const handleClick = () => {
@@ -13,6 +14,7 @@ export default function ShoppingCart() {
         <button type="button" onClick={handleClick} style={{ backgroundColor: "darkblue", color: "white", padding: "8px 16px", borderRadius: "0.5rem", fontWeight: "bold"}} className="font-bold px-4 py-2 rounded-lg">
             Legg til i handlevogn
         </button>
+
         </>
 )
 }

@@ -4,7 +4,7 @@ import ShoppingCart from "./ShoppingCart";
 
 const Card = ({id, name, price, description }) => {
     return (
-      <div className="border border-gray-300 p-5 rounded-lg">
+      <div className="border 1px border-gray-300 p-5 rounded-lg">
         <h1 className="font-bold">{name}</h1>
         <p>{id}</p>
         <p><strong>Beskrivelse:</strong></p>
