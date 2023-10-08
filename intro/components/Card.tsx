@@ -4,12 +4,12 @@ import ShoppingCart from "./ShoppingCart";
 
 const Card = ({id, name, price, description }) => {
     return (
-      <div className="border border-gray-300 p-4 rounded-lg">
+      <div className="border border-gray-300 p-5 rounded-lg">
         <h1 className="font-bold">{name}</h1>
         <p>{id}</p>
-        <p>Beskrivelse:</p>
+        <p><strong>Beskrivelse:</strong></p>
         <p>{description}</p>
-        <p>Pris: {price} kr</p>
+        <p><strong>Pris:</strong> {price} kr</p>
         {/* Føler det er noe feil her(Lite dynamisk?), ved å importere et komponent inn sånn her for å få det ut på sia? :/  */}
         <ShoppingCart />
       </div>
