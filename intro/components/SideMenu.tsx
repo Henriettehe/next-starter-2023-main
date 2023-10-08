@@ -6,6 +6,8 @@ function SideMenu({ isOpen, onClose }) {
     onClose(!isOpen);
   };
 
+  // Kilde: Kodedeler, hentet fra Chat og Googlesøk. 
+
   const [products, setProducts] = useState([]); // State to store products
   const [cart, setCart] = useState([]); // State to store the cart
 
