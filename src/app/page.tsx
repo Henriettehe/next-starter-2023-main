@@ -3,6 +3,7 @@ import Cards from "../../intro/components/Cards";
 
 
 export default function Home() {
+
   return(
     // Funnet kode og hentet kode innstallert next-prosjektet + fra page :) 
     <main className="flex min-h-screen flex-col items-center justify-between p-20 gap-5">
