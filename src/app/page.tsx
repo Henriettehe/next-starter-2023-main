@@ -1,5 +1,6 @@
 import "./globals.css"; 
 import Cards from "../../intro/components/Cards";
+import SideMenu from "../../intro/components/SideMenu";
 
 
 export default function Home() {
@@ -10,6 +11,10 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center text-sm lg:flex flex-wrap gap-5 p-5">
       <Cards />
     </div>
+    {/* Ordnet på aside, så den ligger på siden. Må fikse toggle-evenen, da den overlapper cards*/}
+    <aside className="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transition-transform ease-in-out duration-300 transform translate-x-0">
+      <SideMenu isOpen={undefined} onClose={undefined} />
+    </aside>
     </main>
   )
 } 

@@ -8,7 +8,7 @@ export default function SideMenu({ isOpen, onClose }) {
   return (
     <>
       <h2>Handlekurv</h2>
-      <button onClick={toggleMenu}>Hei</button>
+      <button>Hei</button>
     </>
   );
 }
