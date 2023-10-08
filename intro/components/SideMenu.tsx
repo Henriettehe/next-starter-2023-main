@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export default function SideMenu({ isOpen, onClose }) {
   const toggleMenu = () => {
-    onClose(!isOpen); // Toggle the menu's visibility
+    onClose(!isOpen); // Toggle om menyen synes 
   };
 
   return (
