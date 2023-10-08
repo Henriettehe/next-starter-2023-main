@@ -8,8 +8,8 @@ function SideMenu({ isOpen, onClose }) {
   };
 
   // Kilde: Kodedeler, hentet fra Chat og Googlesøk. Men må ha litt hjelp :) 
-  const [products, setProducts] = useState([]); // State to store products
-  const [cart, setCart] = useState([]); // State to store the cart
+  const [products, setProducts] = useState([]); // State to store products ?? 
+  const [cart, setCart] = useState([]); // State to store the cart ?? 
 
   /* useEffect(() => {
     fetch('./intro/api/products.ts')
@@ -23,9 +23,9 @@ function SideMenu({ isOpen, onClose }) {
   }, []);
   */
 
-  const handleAddToCart = () => {
-    // Trenger hjelp, med litt produktlogistikk. 
-    <></>
+  // Må se litt mer på dette, trenger litt hjelp :)
+  const handleAddToCart = (event) => {
+    setCart(event.target.value); 
   };
 
   // Utseende, og struktur er på topp nå. Mangler logistikken og legge til produkter inn i handlekurven... 
