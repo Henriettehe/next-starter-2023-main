@@ -23,14 +23,14 @@ function SideMenu({ isOpen, onClose }) {
   }, []);
   */
 
-  const handleAddToCart = (product: never) => {
-    // Hvordan få egne produkter inn her? 
-    setCart([...cart, product]);
+  const handleAddToCart = () => {
+    // Trenger hjelp, med litt produktlogistikk. 
+    <></>
   };
 
   // Utseende, og struktur er på topp nå. Mangler logistikken og legge til produkter inn i handlekurven... 
   return (
-    <div className="flex flex-col items-center space-y-2 ">
+    <div className="flex flex-col items-center space-y-2">
       <div className={`fixed top-0 right-0 h-screen w-64 bg-white p-4 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300`}>
       {/* X-icon for å lukke meny */}
       <button className="absolute top-2 right-2" onClick={closeMenu}>
