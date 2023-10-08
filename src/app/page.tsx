@@ -1,7 +1,7 @@
+'use client'; 
 import "./globals.css"; 
 import Cards from "../../intro/components/Cards";
 import SideMenu from "../../intro/components/SideMenu";
-
 
 export default function Home() {
 
