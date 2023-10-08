@@ -1,5 +1,7 @@
 import ShoppingCart from "./ShoppingCart";
 
+//Kilde og god hjelp fra studentassistent, for struktur og hvordan tenke videre! 
+
 const Card = ({ id, name, price, description }) => {
     return (
       <div className="card">
@@ -8,7 +10,7 @@ const Card = ({ id, name, price, description }) => {
         <p>Beskrivelse:</p>
         <p>{description}</p>
         <p>Pris: {price} kr</p>
-        {/* Føler det er noe feil her(Lite dynamisk?), ved å importere et komponent sånn? :/  */}
+        {/* Føler det er noe feil her(Lite dynamisk?), ved å importere et komponent inn sånn her for å få det ut på sia? :/  */}
         <ShoppingCart />
       </div>
     );
