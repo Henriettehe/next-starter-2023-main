@@ -7,6 +7,8 @@ it('should return 5 when called', () => {
     expect(result).toBe(5)
 })
 
-it('should return 6', () => {
-    
+it('should return 6 if string is passed to function', () => {
+    const result = myFunction('')
+
+    expect(result).toBe(6)
 })
