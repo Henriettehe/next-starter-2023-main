@@ -30,6 +30,7 @@ function SideMenu({ isOpen, onClose }) {
 
   // Utseende, og struktur er på topp nå. Mangler logistikken og legge til produkter inn i handlekurven... 
   return (
+    <>
     <div className="flex flex-col items-center space-y-2">
       <div className={`fixed top-0 right-0 h-screen w-64 bg-white p-4 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300`}>
       {/* X-icon for å lukke meny */}
@@ -49,9 +50,9 @@ function SideMenu({ isOpen, onClose }) {
         <span>Legg til</span>
         <FaCheck size={16} color="green" />
       </button>
-
         </div>
     </div>
+    </>
   );
 }
 

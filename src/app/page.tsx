@@ -1,7 +1,7 @@
 'use client'; 
 import "./globals.css"; 
 import Cards from "../../intro/components/Cards";
-import SideMenu from "../../intro/components/SideMenu";
+import SideMenu from '../../intro/components/SideMenu';
 import { useState } from "react";
 
 // Føles ikke helt riktig denne? 
