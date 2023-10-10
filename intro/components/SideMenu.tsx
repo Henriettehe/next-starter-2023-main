@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaShoppingCart, FaTimes, FaCheck } from 'react-icons/fa';
 
 //Får ikke helt til denne, trenger litt freshe øyne på denne: 
-function SideMenu({ isOpen, onClose }) {
-  const closeMenu = () => {
-    onClose(false); //Lukker meny? 
-  };
+function SideMenu() {
+ // Kilde: Kodedeler, hentet fra Chat og Googlesøk. Men må ha litt hjelp :) 
+  const [show, setShow] = useState(false); // State to store products ?? 
 
-  // Kilde: Kodedeler, hentet fra Chat og Googlesøk. Men må ha litt hjelp :) 
-  const [products, setProducts] = useState([]); // State to store products ?? 
-  
+  const handleShowMenu = () => {
+    setShow(!show);
+  };
 
   // Utseende, og struktur er på topp nå. Mangler logistikken og legge til produkter inn i handlekurven... 
   return (
     <>
     <div className="flex flex-col items-center space-y-2">
-      <div className={`fixed top-0 right-0 h-screen w-64 bg-white p-4 transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300`}>
+      <div className={`fixed top-0 right-0 h-screen w-64 bg-white p-4 transform ${show} 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300`}>
       {/* X-icon for å lukke meny */}
-      <button className="absolute top-2 right-2" onClick={closeMenu}>
+      <button onClick={handleShowMenu} className="absolute top-2 right-2" >
         <FaTimes size={24} color="gray" />
       </button>
 
@@ -37,6 +36,6 @@ function SideMenu({ isOpen, onClose }) {
     </div>
     </>
   );
-}
+};
 
 export default SideMenu;
