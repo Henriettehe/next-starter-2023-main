@@ -1,4 +1,13 @@
+import ShoppingBtn from "@/components/ShoppingBtn";
+import { useState } from "react";
 
+const [cart, setCart] = useState([]); // Tilstand for å oppdatere handlekurv.  
+
+
+// Må se litt mer på dette, trenger litt hjelp :)
+const handleAddToCart = () => {
+    setCart(); 
+  };
 
 
 

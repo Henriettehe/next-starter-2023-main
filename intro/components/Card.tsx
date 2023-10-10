@@ -1,8 +1,11 @@
-import ShoppingCart from "./ShoppingCart";
-
 //Kilde og god hjelp fra studentassistent, for struktur og hvordan tenke videre! 
 
-const Card = ({id, name, price, description }) => {
+const Card = ({ id, name, price, description }) => {
+
+  const handleClick = (product: any) => {
+    console.log(product);
+}; 
+
     return (
       <div className="border 1px border-gray-300 p-5 rounded-lg">
         <h1 className="font-bold">{name}</h1>
@@ -10,8 +13,9 @@ const Card = ({id, name, price, description }) => {
         <p><strong>Beskrivelse:</strong></p>
         <p>{description}</p>
         <p><strong>Pris:</strong> {price} kr</p>
-        {/* Føler det er noe feil her(Lite dynamisk?), ved å importere et komponent inn sånn her for å få det ut på sia? :/  */}
-        <ShoppingCart />
+        <button type="button" onClick={handleClick} style={{ backgroundColor: "darkblue", color: "white", padding: "8px 16px", borderRadius: "0.5rem", fontWeight: "bold"}} className="font-bold px-4 py-2 rounded-lg">
+            Legg til i handlevogn
+       </button>
       </div>
     );
   };

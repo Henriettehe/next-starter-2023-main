@@ -9,24 +9,7 @@ function SideMenu({ isOpen, onClose }) {
 
   // Kilde: Kodedeler, hentet fra Chat og Googlesøk. Men må ha litt hjelp :) 
   const [products, setProducts] = useState([]); // State to store products ?? 
-  const [cart, setCart] = useState([]); // State to store the cart ?? 
-
-  /* useEffect(() => {
-    fetch('./intro/api/products.ts')
-      .then((response) => response.json())
-      .then((data) => {
-        setProducts(data); // 
-      })
-      .catch((error) => {
-        console.error('Error fetching product data:', error);
-      });
-  }, []);
-  */
-
-  // Må se litt mer på dette, trenger litt hjelp :)
-  const handleAddToCart = (event) => {
-    setCart(event.target.value); 
-  };
+  
 
   // Utseende, og struktur er på topp nå. Mangler logistikken og legge til produkter inn i handlekurven... 
   return (
@@ -46,7 +29,7 @@ function SideMenu({ isOpen, onClose }) {
       </button>
 
         {/* Må se litt nærmere på dette, hvordan få implementert logikken inn i knappene*/}
-      <button className="flex items-center space-x-1" onClick={handleAddToCart}>
+      <button className="flex items-center space-x-1" >
         <span>Legg til</span>
         <FaCheck size={16} color="green" />
       </button>
