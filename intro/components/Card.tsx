@@ -13,7 +13,7 @@ const Card = ({ id, name, price, description }) => {
         <p><strong>Beskrivelse:</strong></p>
         <p>{description}</p>
         <p><strong>Pris:</strong> {price} kr</p>
-        {/* Flyttet på denne, sånn at elementene er mer samlet*/}
+        {/* Flyttet på denne, sånn at elementene er mer samlet*, prøvde litt ulike stylinger - inline CSS og TailWind CSS :) */}
         <button type="button" onClick={handleClick} style={{ backgroundColor: "darkblue", color: "white", padding: "8px 16px", borderRadius: "0.5rem", fontWeight: "bold"}} className="font-bold px-4 py-2 rounded-lg">
             Legg til i handlevogn
        </button>
