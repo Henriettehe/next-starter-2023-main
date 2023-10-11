@@ -3,6 +3,8 @@ import { FaShoppingCart, FaTimes, FaCheck } from "react-icons/fa";
 
 // Videre, kanskje lukke hele asiden...?
 
+// Kilder: https://xn--fullstkk-o0a.no/courses/intro-react/13-lift-state  + Google + ChatGpt. 
+
 function SideMenu({ isMenuOpen, toggleMenu }) {
   return (
     <div

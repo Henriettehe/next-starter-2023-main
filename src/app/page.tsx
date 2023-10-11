@@ -4,7 +4,7 @@ import "./globals.css";
 import Cards from "../../intro/components/Cards";
 import SideMenu from "../../intro/components/SideMenu";
 
-// Kilde: Masse Google og Chatgpt, for bruk av Tailwind-dokumentasjon og annet struktur samt logikk bak lukke/åpne side-menyen.
+// Kilder: https://xn--fullstkk-o0a.no/courses/intro-react/13-lift-state  + Google + ChatGpt. Bruk av Tailwind-dokumentasjon og annet struktur samt logikk bak lukke/åpne side-menyen.
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
